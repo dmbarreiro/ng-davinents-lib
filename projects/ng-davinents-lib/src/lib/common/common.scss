@@ -4,8 +4,9 @@ $base_text_color: rgb(105, 104, 104);
   border-width: 1px;
   border-style: solid;
   border-radius: 0.2rem;
-  display: inline-block; // To accept properties like height and so
-  text-align: center;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 
 :host > * {
@@ -21,15 +22,13 @@ $base_text_color: rgb(105, 104, 104);
 // this style to all the inputs of all the components
 :host ::ng-deep input {
   border: 0;
-  height: 100%;
+  margin-right: 0.1rem;
   background-color: white;
   box-sizing: border-box; // This way height 100% does not cover the border
 }
 
 .icon {
-  vertical-align: middle;
   color: $base_text_color;
   width: 1rem;
-  margin-left: 0.3rem;
-  margin-right: 0.5rem;
+  margin: 0.1rem 0.5rem 0.1rem 0.3rem;
 }
