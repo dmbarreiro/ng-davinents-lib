@@ -1,0 +1,10 @@
+:host { // Color related host styles
+  border-color: lightgray;
+  background-color: white;
+}
+
+:host(.input-focus) {
+  border-color: rgb(85, 140, 202);
+  -webkit-box-shadow: 0 0 0.2rem rgb(85, 140, 202);
+  box-shadow: 0 0 0.2rem rgb(85, 140, 202);
+}

@@ -1,0 +1,10 @@
+$border-color: red;
+
+:host-context(.fa-input-flash-theme) {
+  border-color: $border-color;
+
+  &.input-focus {
+    -webkit-box-shadow: 0 0 0.2rem $border-color;
+    box-shadow: 0 0 0.2rem $border-color;
+  }
+}

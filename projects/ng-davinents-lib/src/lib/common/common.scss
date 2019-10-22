@@ -1,0 +1,35 @@
+$base_text_color: rgb(105, 104, 104);
+
+:host {
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 0.2rem;
+  display: inline-block; // To accept properties like height and so
+  text-align: center;
+}
+
+:host > * {
+  background-color: white;
+}
+
+:host(.input-focus) {
+  outline: none;
+}
+
+// ::ng-deep breaks style isolation and applies style to any input inside component
+// we need :host to limit the effect to the component, otherwise it'll apply
+// this style to all the inputs of all the components
+:host ::ng-deep input {
+  border: 0;
+  height: 100%;
+  background-color: white;
+  box-sizing: border-box; // This way height 100% does not cover the border
+}
+
+.icon {
+  vertical-align: middle;
+  color: $base_text_color;
+  width: 1rem;
+  margin-left: 0.3rem;
+  margin-right: 0.5rem;
+}

@@ -17,7 +17,18 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ng-davinents-lib": [
+        "dist/ng-davinents-lib"
+      ],
+      "ng-davinents-lib/*": [
+        "dist/ng-davinents-lib/*"
+      ],
+      "@ng-davinents-lib/*": [
+        "projects/ng-davinents-lib/src/lib/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
