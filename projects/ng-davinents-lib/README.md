@@ -1,24 +1,26 @@
 # NgDavinentsLib
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.11.
+Contains davinents Angular component library and a test project where the library is used, both can be found under `projects` folder.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.12.
 
-## Code scaffolding
+## Install
 
-Run `ng generate component component-name --project ng-davinents-lib` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ng-davinents-lib`.
-> Note: Don't forget to add `--project ng-davinents-lib` or else it will be added to the default project in your `angular.json` file. 
+To install the library using npm:
 
-## Build
+```
+npm install ng-davinents-lib
+```
 
-Run `ng build ng-davinents-lib` to build the project. The build artifacts will be stored in the `dist/` directory.
+For some components (like `FaInputComponent` or `MdInputComponent`) that use icons, you need to import [Font-Awesome](https://fontawesome.com/icons?d=gallery) or [Material Icons](https://material.io/resources/icons/?style=baseline) in your base `index.html`.
 
-## Publishing
+```
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+```
 
-After building your library with `ng build ng-davinents-lib`, go to the dist folder `cd dist/ng-davinents-lib` and run `npm publish`.
+Skip the above and install the icons in your environment if you prefer to have then locally.
 
-## Running unit tests
+## Component list
 
-Run `ng test ng-davinents-lib` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+- `FaInputComponent`: Input component with a font awesome icon preceding the input box.
+- `MdInputComponent`: Input component with a material icon preceding the input box.
