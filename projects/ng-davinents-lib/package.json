@@ -1,4 +1,5 @@
 {
+  "keywords": ["library", "angular", "components"],
   "name": "ng-davinents-lib",
   "version": "1.0.0",
   "peerDependencies": {
