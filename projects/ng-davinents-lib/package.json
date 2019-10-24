@@ -1,13 +1,17 @@
 {
   "author": "David Martinez Barreiro <davidmartinezbarreiro@gmail.com>",
-  "keywords": ["library", "angular", "components"],
+  "keywords": [
+    "library",
+    "angular",
+    "components"
+  ],
   "license": "MIT",
   "name": "ng-davinents-lib",
   "repository": {
     "type": "url",
     "url": "git+https://github.com/dmbarreiro/ng-davinents-lib.git"
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "peerDependencies": {
     "@angular/common": "^8.2.11",
     "@angular/core": "^8.2.11"
