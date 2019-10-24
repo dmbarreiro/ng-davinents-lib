@@ -3,15 +3,17 @@ import { NgModule } from "@angular/core";
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
-import { NgDavinentsLibModule } from "projects/ng-davinents-lib/src/public-api";
+import { FaInputComponent, MdInputComponent, InputReferenceDirective } from "projects/ng-davinents-lib/src/public-api";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FaInputComponent,
+    MdInputComponent,
+    InputReferenceDirective
   ],
   imports: [
     BrowserModule,
-    NgDavinentsLibModule,
     AppRoutingModule
   ],
   providers: [],

@@ -22,5 +22,5 @@ Skip the above and install the icons in your environment if you prefer to have t
 
 ## Component list
 
-- `FaInputComponent`: Input component with a font awesome icon preceding the input box.
-- `MdInputComponent`: Input component with a material icon preceding the input box.
+- `FaInputComponent`: Input component with a font awesome icon preceding the input box. You need to import `InputReferenceDirective` to make this component work properly. Check example app in the Github repository.
+- `MdInputComponent`: Input component with a material icon preceding the input box. You need to import `InputReferenceDirective` to make this component work properly. Check example app in the Github repository.
