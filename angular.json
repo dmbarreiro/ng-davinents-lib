@@ -164,6 +164,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "ng-davinents-lib"
 }
