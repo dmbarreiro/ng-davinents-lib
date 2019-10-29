@@ -1,0 +1,15 @@
+<div class="progress-bar-container">
+  <div class="progress-bar" [ngStyle]="{'width.%': complete_percentage}"></div>
+</div>
+<a
+  class="holdable-inline"
+  holdable
+  (holdTime)="holdHandler($event)"
+  (press)="holding_button = true"
+  (pan)="holding_button = false"
+  (drag)="holding_button = false"
+  (pressup)="holding_button = false"
+  [ngClass]="{'holdable-pressed': holding_button}"
+>
+  <ng-content></ng-content>
+</a>

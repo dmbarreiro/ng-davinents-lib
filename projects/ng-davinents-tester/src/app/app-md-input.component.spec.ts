@@ -5,6 +5,7 @@ import { RouterTestingModule } from "@angular/router/testing";
 import { AppComponent } from "./app.component";
 import { FaInputComponent } from "../../../ng-davinents-lib/src/lib/fa-input/fa-input.component";
 import { MdInputComponent } from "../../../ng-davinents-lib/src/lib/md-input/md-input.component";
+import { HoldButtonComponent } from "../../../ng-davinents-lib/src/lib/hold-button/hold-button.component";
 
 describe("AppComponent - MD Input", () => {
 
@@ -22,7 +23,8 @@ describe("AppComponent - MD Input", () => {
       declarations: [
         AppComponent,
         FaInputComponent,
-        MdInputComponent
+        MdInputComponent,
+        HoldButtonComponent
       ],
     }).compileComponents();
   }));

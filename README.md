@@ -3,6 +3,10 @@
 Contains davinents Angular component library and a test project where the library is used, both can be found under `projects` folder.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.12.
 
+## Requirements
+
+The library depends on [Hammer.js](https://hammerjs.github.io/) for gesture detection, install it in your project with `npm install --save hammerjs`.
+
 ## Install
 
 To install the library using npm:
@@ -24,10 +28,11 @@ Skip the above and install the icons in your environment if you prefer to have t
 
 - `FaInputComponent`: Input component with a font awesome icon preceding the input box. You need to import `InputReferenceDirective` to make this component work properly. Check example app.
 - `MdInputComponent`: Input component with a material icon preceding the input box. You need to import `InputReferenceDirective` to make this component work properly. Check example app.
+- `HoldButtonComponent`: Hold button. Emits trigger event when user holds the button pressed for the configured `ttl_milisec` time. The button includes a progress bar that indicated visually how close are we to triggering the button event. This component depends on Hammer.js. You need to import `HoldableDirective` to make this component work properly. Check example app.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `ng serve` for a dev server running the example project `ng-davinents-tester`. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
