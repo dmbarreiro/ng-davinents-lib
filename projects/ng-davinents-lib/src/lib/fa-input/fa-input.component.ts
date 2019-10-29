@@ -18,7 +18,10 @@ export class FaInputComponent implements AfterContentInit {
 
   ngAfterContentInit() {
     if (!this.input) {
-      console.error("app-fa-input needs to receive an HTML input inside its content.");
+      console.error("dvts-fa-input needs to receive an HTML input inside its content.");
+    }
+    if (!this.icon) {
+      console.error("dvts-fa-input needs to receive icon property containing the font-awesome icon name. (Ex: icon=\"envelope\")");
     }
   }
 
