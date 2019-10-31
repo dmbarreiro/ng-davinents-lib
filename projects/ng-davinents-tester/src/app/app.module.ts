@@ -11,6 +11,8 @@ import {
   HoldableDirective
 } from "projects/ng-davinents-lib/src/public-api";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { NavigationComponent } from './navigation/navigation.component';
+import { FormComponent } from './form/form.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,8 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
     HoldButtonComponent,
     InputReferenceDirective,
     MdInputComponent,
+    NavigationComponent,
+    FormComponent,
   ],
   imports: [
     BrowserModule,

@@ -2,15 +2,15 @@ import { DebugElement } from "@angular/core";
 import { TestBed, async, ComponentFixture } from "@angular/core/testing";
 import { RouterTestingModule } from "@angular/router/testing";
 
-import { AppComponent } from "./app.component";
+import { FormComponent } from "./form.component";
 import { FaInputComponent } from "@ng-davinents-lib/fa-input/fa-input.component";
 import { MdInputComponent } from "@ng-davinents-lib/md-input/md-input.component";
-import { HoldButtonComponent } from "../../../ng-davinents-lib/src/lib/hold-button/hold-button.component";
+import { HoldButtonComponent } from "../../../../ng-davinents-lib/src/lib/hold-button/hold-button.component";
 
-describe("AppComponent - FA Input", () => {
+describe("FormComponent - FA Input", () => {
 
-  let component: AppComponent;
-  let fixture: ComponentFixture<AppComponent>;
+  let component: FormComponent;
+  let fixture: ComponentFixture<FormComponent>;
   let el: DebugElement;
   let emailField: Element;
 
@@ -21,7 +21,7 @@ describe("AppComponent - FA Input", () => {
         RouterTestingModule
       ],
       declarations: [
-        AppComponent,
+        FormComponent,
         FaInputComponent,
         MdInputComponent,
         HoldButtonComponent
@@ -30,7 +30,7 @@ describe("AppComponent - FA Input", () => {
   }));
 
   beforeEach(async(() => {
-    fixture = TestBed.createComponent(AppComponent);
+    fixture = TestBed.createComponent(FormComponent);
     component = fixture.debugElement.componentInstance;
     el = fixture.debugElement;
     emailField = el.nativeElement.querySelector("#fa-email-field");

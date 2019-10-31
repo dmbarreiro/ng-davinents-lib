@@ -1,8 +1,8 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { async, ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { MdInputComponent } from './md-input.component';
+import { MdInputComponent } from "./md-input.component";
 
-describe('MdInputComponent', () => {
+describe("MdInputComponent", () => {
   let component: MdInputComponent;
   let fixture: ComponentFixture<MdInputComponent>;
 
@@ -19,7 +19,7 @@ describe('MdInputComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeTruthy();
   });
 });

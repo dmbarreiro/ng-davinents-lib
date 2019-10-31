@@ -2,15 +2,15 @@ import { DebugElement } from "@angular/core";
 import { TestBed, async, ComponentFixture } from "@angular/core/testing";
 import { RouterTestingModule } from "@angular/router/testing";
 
-import { AppComponent } from "./app.component";
-import { FaInputComponent } from "../../../ng-davinents-lib/src/lib/fa-input/fa-input.component";
-import { MdInputComponent } from "../../../ng-davinents-lib/src/lib/md-input/md-input.component";
-import { HoldButtonComponent } from "../../../ng-davinents-lib/src/lib/hold-button/hold-button.component";
+import { FormComponent } from "./form.component";
+import { FaInputComponent } from "../../../../ng-davinents-lib/src/lib/fa-input/fa-input.component";
+import { MdInputComponent } from "../../../../ng-davinents-lib/src/lib/md-input/md-input.component";
+import { HoldButtonComponent } from "../../../../ng-davinents-lib/src/lib/hold-button/hold-button.component";
 
-describe("AppComponent - Hold Button", () => {
+describe("FormComponent - Hold Button", () => {
 
-  let component: AppComponent;
-  let fixture: ComponentFixture<AppComponent>;
+  let component: FormComponent;
+  let fixture: ComponentFixture<FormComponent>;
   let el: DebugElement;
   let holdButton: Element;
 
@@ -21,7 +21,7 @@ describe("AppComponent - Hold Button", () => {
         RouterTestingModule
       ],
       declarations: [
-        AppComponent,
+        FormComponent,
         FaInputComponent,
         MdInputComponent,
         HoldButtonComponent
@@ -30,7 +30,7 @@ describe("AppComponent - Hold Button", () => {
   }));
 
   beforeEach(async(() => {
-    fixture = TestBed.createComponent(AppComponent);
+    fixture = TestBed.createComponent(FormComponent);
     component = fixture.debugElement.componentInstance;
     el = fixture.debugElement;
     holdButton = el.nativeElement.querySelector("#hold-button-basic");

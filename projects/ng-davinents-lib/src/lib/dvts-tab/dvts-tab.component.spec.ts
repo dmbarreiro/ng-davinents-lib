@@ -1,8 +1,8 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { async, ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { DvtsTabComponent } from './dvts-tab.component';
+import { DvtsTabComponent } from "./dvts-tab.component";
 
-describe('DvtsTabComponent', () => {
+describe("DvtsTabComponent", () => {
   let component: DvtsTabComponent;
   let fixture: ComponentFixture<DvtsTabComponent>;
 
@@ -19,7 +19,7 @@ describe('DvtsTabComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeTruthy();
   });
 });
