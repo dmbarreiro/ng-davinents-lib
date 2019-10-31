@@ -8,11 +8,13 @@ import {
   MdInputComponent,
   InputReferenceDirective,
   HoldButtonComponent,
-  HoldableDirective
+  HoldableDirective,
+  TabContainerComponent,
+  TabComponent
 } from "projects/ng-davinents-lib/src/public-api";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-import { NavigationComponent } from './navigation/navigation.component';
-import { FormComponent } from './form/form.component';
+import { NavigationComponent } from "./navigation/navigation.component";
+import { FormComponent } from "./form/form.component";
 
 @NgModule({
   declarations: [
@@ -24,6 +26,8 @@ import { FormComponent } from './form/form.component';
     MdInputComponent,
     NavigationComponent,
     FormComponent,
+    TabComponent,
+    TabContainerComponent
   ],
   imports: [
     BrowserModule,

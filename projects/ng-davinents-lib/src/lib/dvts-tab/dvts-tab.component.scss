@@ -1,0 +1,8 @@
+@import "../common/default-theme.scss";
+
+.tab {
+  border-left: $tab-border;
+  border-right: $tab-border;
+  border-bottom: $tab-border;
+  padding: 1em 1.5em;
+}

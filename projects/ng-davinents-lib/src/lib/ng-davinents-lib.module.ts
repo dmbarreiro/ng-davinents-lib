@@ -6,8 +6,8 @@ import { InputReferenceDirective } from "./common/input-reference.directive";
 import { MdInputComponent } from "./md-input/md-input.component";
 import { HoldButtonComponent } from "./hold-button/hold-button.component";
 import { HoldableDirective } from "./common/holdable.directive";
-import { DvtsTabContainerComponent } from "./dvts-tab-container/dvts-tab-container.component";
-import { DvtsTabComponent } from "./dvts-tab/dvts-tab.component";
+import { TabContainerComponent } from "./dvts-tab-container/dvts-tab-container.component";
+import { TabComponent } from "./dvts-tab/dvts-tab.component";
 
 @NgModule({
   declarations: [
@@ -16,8 +16,8 @@ import { DvtsTabComponent } from "./dvts-tab/dvts-tab.component";
     HoldButtonComponent,
     InputReferenceDirective,
     MdInputComponent,
-    DvtsTabContainerComponent,
-    DvtsTabComponent,
+    TabContainerComponent,
+    TabComponent,
   ],
   imports: [
     CommonModule // Common structural directives like ngIf, ngFor and more
