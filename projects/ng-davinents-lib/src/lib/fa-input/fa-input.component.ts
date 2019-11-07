@@ -3,7 +3,7 @@ import { Component, Input, ContentChild, AfterContentInit, HostBinding } from "@
 import { InputReferenceDirective } from "../common/input-reference.directive";
 
 @Component({
-  selector: "dvts-fa-input [icon]",
+  selector: "dvts-fa-input",
   templateUrl: "./fa-input.component.html",
   styleUrls: ["./fa-input.component.scss"]
 })
@@ -17,11 +17,16 @@ export class FaInputComponent implements AfterContentInit {
   constructor() { }
 
   ngAfterContentInit() {
+    let error_message: string;
     if (!this.input) {
-      console.error("dvts-fa-input needs to receive an HTML input inside its content.");
+      error_message = "dvts-fa-input needs to receive an HTML input inside its content";
+      console.error(error_message);
+      throw new Error(error_message);
     }
     if (!this.icon) {
-      console.error("dvts-fa-input needs to receive icon property containing the font-awesome icon name. (Ex: icon=\"envelope\")");
+      error_message = "dvts-fa-input needs to receive icon property containing the font-awesome icon name. (Ex: icon=\"envelope\")";
+      console.error(error_message);
+      throw new Error(error_message);
     }
   }
 
