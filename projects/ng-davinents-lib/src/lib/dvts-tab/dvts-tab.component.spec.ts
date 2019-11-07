@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { DvtsTabComponent } from "./dvts-tab.component";
+import { TabComponent } from "./dvts-tab.component";
 
 describe("DvtsTabComponent", () => {
-  let component: DvtsTabComponent;
-  let fixture: ComponentFixture<DvtsTabComponent>;
+  let component: TabComponent;
+  let fixture: ComponentFixture<TabComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ DvtsTabComponent ]
+      declarations: [ TabComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(DvtsTabComponent);
+    fixture = TestBed.createComponent(TabComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

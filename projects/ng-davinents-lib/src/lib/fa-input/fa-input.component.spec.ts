@@ -1,14 +1,20 @@
 import { async, ComponentFixture, TestBed } from "@angular/core/testing";
 
 import { FaInputComponent } from "./fa-input.component";
+import { NgDavinentsLibModule } from "@ng-davinents-lib/ng-davinents-lib.module";
 
-describe("FaInputComponent", () => {
+fdescribe("FaInputComponent", () => {
   let component: FaInputComponent;
   let fixture: ComponentFixture<FaInputComponent>;
 
   beforeEach(async(() => {
+    // TestBed.configureTestingModule({
+    //   declarations: [ FaInputComponent ],
+    //   imports: [ NgDavinentsLibModule ]
+    // })
+    // .compileComponents();
     TestBed.configureTestingModule({
-      declarations: [ FaInputComponent ]
+      imports: [ NgDavinentsLibModule ]
     })
     .compileComponents();
   }));
